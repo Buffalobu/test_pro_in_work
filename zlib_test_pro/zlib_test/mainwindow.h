@@ -15,6 +15,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    long filesize(FILE *stream);
+
 private slots:
     void on_pushButton_clicked();
 
