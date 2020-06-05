@@ -29,7 +29,7 @@ void MainWindow::on_pushButton_clicked()
     unsigned char *buffer_src  = new unsigned char[MaxBufferSize];
     unsigned char *buffer_compress  = new unsigned char[MaxBufferSize];
     unsigned char *buffer_uncompress = new unsigned char[MaxBufferSize];
-    File_src = fopen("src.txt","r");
+    File_src = fopen("src.txt","r");//文件位置：G:\hello\zlib_test_pro\build-zlib_test-Desktop_Qt_5_12_5_MinGW_32_bit-Debug
     File_compress = fopen("compress.txt","w");
     File_uncompress = fopen("uncompress.txt","w");
     //compress
