@@ -20,9 +20,10 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h \
-    zconf.h \
-    zlib.h
+    mainwindow.h \ \
+    zlib/include/zconf.h \
+    zlib/include/zlib.h
+
 
 FORMS += \
     mainwindow.ui
@@ -33,4 +34,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 
-win32: LIBS += -L$$PWD/./ -lzdll
+win32: LIBS += -L$$PWD/zlib/lib/ -lzdll
+
+INCLUDEPATH += $$PWD/zlib/include
+DEPENDPATH += $$PWD/zlib/include
