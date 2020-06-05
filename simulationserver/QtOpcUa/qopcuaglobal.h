@@ -1,0 +1,1 @@
+#include "QtOpcUa/qopcuaglobal.h"

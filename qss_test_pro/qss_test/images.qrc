@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/80x80_transpt.png</file>
+        <file>images/96x96_transpt.png</file>
+        <file>images/close.png</file>
+        <file>images/load.png</file>
+        <file>images/logo.jpg</file>
+        <file>images/logo_16.jpg</file>
+        <file>images/logo_32.jpg</file>
+        <file>images/logo_80.jpg</file>
+        <file>images/menu.png</file>
+        <file>images/print.png</file>
+        <file>images/save.png</file>
+        <file>images/title.png</file>
+        <file>images/Widget_load.png</file>
+        <file>images/Widget_menu.png</file>
+        <file>images/Widget_save.png</file>
+        <file>images/Widget_screenShot.png</file>
+        <file>images/Widget_xic.png</file>
+        <file>images/XIC.png</file>
+    </qresource>
+</RCC>
