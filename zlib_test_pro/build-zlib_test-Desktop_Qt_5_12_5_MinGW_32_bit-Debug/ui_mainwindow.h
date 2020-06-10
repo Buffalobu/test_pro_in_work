@@ -25,6 +25,9 @@ public:
     QWidget *centralwidget;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
+    QPushButton *UI_PB_CONVERT;
+    QPushButton *UI_PB_LOAD;
+    QPushButton *UI_PB_READMSB;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -37,10 +40,19 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(80, 70, 75, 23));
+        pushButton->setGeometry(QRect(230, 310, 75, 23));
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(70, 160, 75, 23));
+        pushButton_2->setGeometry(QRect(230, 450, 75, 23));
+        UI_PB_CONVERT = new QPushButton(centralwidget);
+        UI_PB_CONVERT->setObjectName(QString::fromUtf8("UI_PB_CONVERT"));
+        UI_PB_CONVERT->setGeometry(QRect(360, 310, 75, 23));
+        UI_PB_LOAD = new QPushButton(centralwidget);
+        UI_PB_LOAD->setObjectName(QString::fromUtf8("UI_PB_LOAD"));
+        UI_PB_LOAD->setGeometry(QRect(120, 310, 75, 23));
+        UI_PB_READMSB = new QPushButton(centralwidget);
+        UI_PB_READMSB->setObjectName(QString::fromUtf8("UI_PB_READMSB"));
+        UI_PB_READMSB->setGeometry(QRect(500, 310, 75, 23));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -58,8 +70,11 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        pushButton->setText(QApplication::translate("MainWindow", "\345\216\213\347\274\251", nullptr));
-        pushButton_2->setText(QApplication::translate("MainWindow", "\345\216\213\347\274\25122", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "ReadMSB", nullptr));
+        pushButton_2->setText(QApplication::translate("MainWindow", "\345\216\213\347\274\251", nullptr));
+        UI_PB_CONVERT->setText(QApplication::translate("MainWindow", "\350\275\254\346\215\242", nullptr));
+        UI_PB_LOAD->setText(QApplication::translate("MainWindow", "\345\257\274\345\205\245", nullptr));
+        UI_PB_READMSB->setText(QApplication::translate("MainWindow", "MyReadMSB", nullptr));
     } // retranslateUi
 
 };
